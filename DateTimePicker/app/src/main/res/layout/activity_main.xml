@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblDateandTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:background="#ff000099"
+        android:singleLine="false"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Date Time Picker DialogBox"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_margin="5dp"
+        android:background="#ffbb0000" />
+    <TimePicker
+        android:id="@+id/TimePicker1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dip"
+        android:layout_margin="5dip"
+        android:background="#ffbb0000" />
+
+    <AnalogClock
+        android:id="@+id/analogClock1"
+        android:layout_width="126dp"
+        android:layout_height="114dp"
+        />
+
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Analog Clock shows device's time only" />
+    </TimePicker>
+</RelativeLayout>
